@@ -29,6 +29,8 @@ Create 2 database follow `pg-diff-config.json`
 pg-diff -c development initial-script
 ```
 
+> `initial-script` is name of migration file.
+
 ### Run migrate to target
 
 ```sh
