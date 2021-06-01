@@ -20,8 +20,8 @@ Source is new Database you need to update on the file such as directus and will 
 
 Create 2 database follow `pg-diff-config.json`
 
-- `directus-101` is new database change by Directus (source)
 - `directus-100` is old database (target)
+- `directus-101` is new database change by Directus (source)
 
 ### Create diff
 
