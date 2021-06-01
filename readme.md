@@ -14,13 +14,22 @@ Source is new Database you need to update on the file such as directus and will 
 
 `npm install -g pg-diff-cli`
 
-## Create diff
+## Develop
+
+### Pre-pair
+
+Create 2 database follow `pg-diff-config.json`
+
+- `directus-101` is new database change by Directus (source)
+- `directus-100` is old database (target)
+
+### Create diff
 
 ```sh
 pg-diff -c development initial-script
 ```
 
-## Run migrate to target
+### Run migrate to target
 
 ```sh
 pg-diff -mt development
