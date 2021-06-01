@@ -1,0 +1,41 @@
+{
+  "development": {
+    "sourceClient": {
+      "host": "localhost",
+      "port": 5432,
+      "database": "directus-101",
+      "user": "postgres",
+      "password": "1234",
+      "applicationName": "pg-diff-cli"
+    },
+    "targetClient": {
+      "host": "localhost",
+      "port": 5432,
+      "database": "directus-100",
+      "user": "postgres",
+      "password": "1234",
+      "applicationName": "pg-diff-cli"
+    },
+    "compareOptions": {
+      "author": "panachainy",
+      "outputDirectory": "db_migration",
+      "getAuthorFromGit": false,
+      "schemaCompare": {
+        "namespaces": ["public", "public"],
+        "dropMissingTable": false,
+        "dropMissingView": false,
+        "dropMissingFunction": false,
+        "dropMissingAggregate": false,
+        "roles": []
+      },
+      "dataCompare": {
+        "enable": false
+      }
+    },
+    "migrationOptions": {
+      "patchesDirectory": "db_migration",
+      "historyTableName": "migrations_history",
+      "historyTableSchema": "public"
+    }
+  }
+}
