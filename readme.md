@@ -14,7 +14,7 @@ Source is new Database you need to update on the file such as directus and will 
 
 `npm install -g pg-diff-cli`
 
-## Develop
+## Development
 
 ### Pre-pair
 
@@ -34,6 +34,10 @@ pg-diff -c development initial-script
 ```sh
 pg-diff -mt development
 ```
+
+## Concern
+
+- support only migrate up
 
 ## Ref
 
